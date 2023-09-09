@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 //app.get ('/', (req,res)=>{res.send ("Bienvenidos al sitio")})
 app.set('view engine', 'ejs');
-//app.get('/', (req, res) => { res.sendFile(path.join(__dirname, 'views/main/home')) }); esta ruta no debería estar acá. 
+//app.get('/', (req, res) => { res.sendFile(path.join(__dirname, 'views/main/home')) });
 
 const proyectosRoutes = require('./routes/proyectos');
 const serviciosRoutes = require('./routes/servicios')
