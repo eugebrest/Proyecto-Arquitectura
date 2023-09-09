@@ -6,9 +6,9 @@ const PORT = process.env.PORT || 3000;
 //npm start para correr el servidor sin el node src/app.js
 //modifique el package.json agregue en "script" >> "start": "node src/app.js"
 
-//app.get ('/', (req,res)=>{res.send ("Bienvenidos al sitio")})
 app.set('view engine', 'ejs');
-//app.get('/', (req, res) => { res.sendFile(path.join(__dirname, 'views/main/home')) }); esta ruta no debería estar acá. 
+app.set('views', path.join(__dirname, 'views'));
+
 
 const proyectosRoutes = require('./routes/proyectos');
 const serviciosRoutes = require('./routes/servicios')
