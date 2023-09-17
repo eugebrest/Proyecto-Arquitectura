@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-
 const proyectosRoutes = require('./routes/proyectos');
 const serviciosRoutes = require('./routes/servicios')
 const mainRoutes = require('./routes/main');
