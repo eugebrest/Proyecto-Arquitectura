@@ -1,5 +1,5 @@
 const serviciosController = {
-    servicios: (req, res) => {
+    detalle: (req, res) => {
         return res.render('servicios/detalle-servicios')
     }
 }
